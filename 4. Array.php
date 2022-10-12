@@ -8,6 +8,7 @@ Multidimensional arrays - Arrays containing one or more arrays
 $arr = Array("tom", "hanks");
 $arr[10] = "Asad";
 
+//	print
 foreach($arr as $a){
 	echo "$a  ";
 }
