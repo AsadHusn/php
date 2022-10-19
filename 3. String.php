@@ -14,9 +14,11 @@ echo nl2br("Seegatesite.com \nsharing and learning programming");
 
 strtolower($name);
 strtoupper($name);
+//  uppercase first letter of each word
+ucwords($name);
 
 strlen($name);
-str_word_count();
+str_word_count($name);
 
 str_replace("Academy", "College", $name);
 
@@ -29,15 +31,28 @@ substr($name, 8, 6);
 strpos($name, "College");
 
 // Finds the position of the last occurrence of a string inside another string (case-sensitive)
-strrpos();
+strrpos($name, "College");
 
 // Finds the position of the first occurrence of a string inside another string (case-insensitive)
-stripos();
+stripos($name, "college");
 
 // Finds the position of the last occurrence of a string inside another string (case-insensitive)
-strripos();
+strripos($name, "college");
 
+// reverse a string
+strrev($name);
 
-strrev()
+// convert to string
+var_export($name);
+
+str_starts_with($name, "Academy");
+str_ends_with($name, "ege");
+
+//  parse html to the page
+htmlspecialchars($name);
+
+//  string separator
+explode(".", $name);
+
 
 ?>

@@ -13,14 +13,14 @@ foreach($arr as $a){
 	echo "$a  ";
 }
 
-// Length of the Array
+// Length
 count($arr);
 
 // -------------------
-echo "<h5>Operators</h5>";
+
 //	Array Operators
 
-// +	Union
+// +	Union (join two associative arrays)
 $a = array("a" => "red", "b" => "green");  
 $b = array("c" => "blue", "d" => "yellow");
 $c = $a+$b;
@@ -28,29 +28,17 @@ print_r($c);
 
 // ==	equality
 var_dump($a == $b);
-// !=	Inequality
-// <>	Inequality
+// != or <>	Inequality
 
-// ===	Identity
-// Returns true if $x and $y have the same key/value pairs in the same order and of the same types
+// ===	Identity (identical)
+// returns true if $x and $y have the same key/value pairs in the same order and of the same types
 var_dump($a === $b);
+
 // !==	Non-identity
 
-// --------------------
+// -----------------------
 
-//	Conditional Assignment Operators
-
-// ?:	Ternary
-$status = (empty($user)) ? "anonymous" : "logged in";
-
-/* ??	Null coalescing
-The value will be expr1, if expr1 exists, and is not NULL.
-If expr1 does not exist, or is NULL, the value will be expr2. */
-$user = $_GET["user"] ?? "2nd value because 1st isn't exist";
-
-// --------------------
-echo "<h4> Multidimentional Array </h4>";
-
+//	Multidimentional array
 $cars = array (
 	array("Volvo",22,18),
 	array("BMW",15,13),
