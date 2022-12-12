@@ -1,0 +1,18 @@
+vendor folder
+install a package
+
+composer requier <package-name>
+
+composer require cocur/slugify
+
+use installed package
+require __DIR__.'/vendor/autoload.php'
+use Cocur\Slugify\Slugify;
+
+install laravel
+
+composer create-project laravel/laravel <name>
+
+run laravel project
+
+php artisan serve
